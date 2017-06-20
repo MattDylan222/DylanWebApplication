@@ -1,11 +1,20 @@
 /* Stylings for the site in order */
 
+
+.title{
+	position:relative;
+}
+
 /* Title of the site */
 .jumbotron { 
     background-color: #3399ff; /* Dark Blue */
+    postiton:relative;
+    z-index:-1;
     color: #ffffff;
     padding: 100px 25px;
     margin: 0px;
+    margin-top:-5px;
+    font-family: Rye;
 }
 .bg-blue {
 	background-color: #3399ff;
