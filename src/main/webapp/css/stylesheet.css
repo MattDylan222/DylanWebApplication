@@ -1,0 +1,40 @@
+/* Stylings for the site in order */
+
+/* Title of the site */
+.jumbotron { 
+    background-color: #3399ff; /* Dark Blue */
+    color: #ffffff;
+    padding: 100px 25px;
+    margin: 0px;
+}
+.bg-blue {
+	background-color: #3399ff;
+}
+.bg-grey {
+	background-color: #f6f6f6;
+}
+.bg-black {
+	background-color: #101010;
+	color: #ffffff;
+	margin: 0px;
+}
+/* Adds padding to top and bottom */
+.container-fluid {
+    padding: 60px 50px;
+}
+/* Images */
+.logo {
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.skillImg {
+	height: 120px;
+    width: 100px;
+}
+

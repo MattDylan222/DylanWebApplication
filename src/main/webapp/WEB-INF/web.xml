@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns = "http://java.sun.com/xml/ns/j2ee" 
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://java.sun.com/xml/ns/j2ee 
+   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  
+  <!-- The web.xml is the deployment descriptor for a servlet-based Java web application. 
+  		It declares which servlets exist and which URLs to handle  -->
+   <display-name>ProjectTEMPLE</display-name>
+
+<!-- This servlet receives all requests and transfers them to all other components of the application -->
+   <servlet>
+      <servlet-name>spring-mvc</servlet-name>
+      <servlet-class>
+         org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+<!-- Servlet mappings specify the web container of which java servlet should be invoked for a given url  -->
+   <servlet-mapping>
+      <servlet-name>spring-mvc</servlet-name>
+      <url-pattern>/</url-pattern>
+   </servlet-mapping>
+   
+<!--  Used to provide the servlet with initialization data  -->
+   <context-param>
+   		<param-name>contextConfigLocation</param-name>
+   		<param-value>
+   			/WEB-INF/applicationContext.xml
+   			/WEB-INF/spring-mvc-servlet.xml
+   		</param-value>
+   </context-param>
+   
+   </web-app>
